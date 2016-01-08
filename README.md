@@ -67,12 +67,21 @@ module.exports = function(config) {
 
 ### AMD Based Template Configuration
 
-If you want to export your compiled templates as anonymous AMD modules,
-use the `amd` option in the config as shown below:
+If you want to export your compiled templates as anonymous AMD modules, use the `amd` option:
 
 ```js
     handlebarsPreprocessor: {
       amd: true
+    }
+```
+
+### CommonJS Based Template Configuration
+
+If you want to register your compiled templates as CommonJS modules, use the `commonjs` option:
+
+```js
+    handlebarsPreprocessor: {
+      commonjs: true
     }
 ```
 
